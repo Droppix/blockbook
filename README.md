@@ -13,7 +13,7 @@
 
 ## Build and installation instructions
 
-Officially supported platform is **Debian Linux** and **AMD64** architecture.
+Officially supported platform is **Ubuntu Linux** and **AMD64** architecture.
 
 Memory and disk requirements for initial synchronization of **Bitcoin mainnet** are around 32 GB RAM and over 180 GB of disk space. After initial synchronization, fully synchronized instance uses about 10 GB RAM.
 Other coins should have lower requirements, depending on the size of their block chain. Note that fast SSD disks are highly
@@ -34,7 +34,7 @@ Blockbook currently supports over 30 coins. The Trezor team implemented
 the rest of coins were implemented by the community.
 
 Testnets for some coins are also supported, for example:
-- Bitcoin Testnet, Bitcoin Cash Testnet, ZCash Testnet, Ethereum Testnet Ropsten
+- Bitcoin Testnet, Bitcoin Cash Testnet, Dogecoind Testnet, ZCash Testnet, Ethereum Testnet Ropsten
 
 List of all implemented coins is in [the registry of ports](/docs/ports.md).
 
