@@ -13,11 +13,13 @@ import (
 // magic numbers
 const (
 	MainnetMagic wire.BitcoinNet = 0xc0c0c0c0
+	TestnetMagic wire.BitcoinNet = 0xfcc1b7dc
 )
 
 // chain parameters
 var (
 	MainNetParams chaincfg.Params
+	TestNetParams chaincfg.Params
 )
 
 func init() {
@@ -25,6 +27,11 @@ func init() {
 	MainNetParams.Net = MainnetMagic
 	MainNetParams.PubKeyHashAddrID = []byte{30}
 	MainNetParams.ScriptHashAddrID = []byte{22}
+
+	TestNetParams = chaincfg.TestNet3Params
+	TestNetParams.Net = TestnetMagic
+	TestNetParams.PubKeyHashAddrID = []byte{113}
+	TestNetParams.ScriptHashAddrID = []byte{196}
 }
 
 // DogecoinParser handle
@@ -42,11 +49,16 @@ func NewDogecoinParser(params *chaincfg.Params, c *btc.Configuration) *DogecoinP
 func GetChainParams(chain string) *chaincfg.Params {
 	if !chaincfg.IsRegistered(&MainNetParams) {
 		err := chaincfg.Register(&MainNetParams)
+		if err == nil {
+			err = chaincfg.Register(&TestNetParams)
+		}
 		if err != nil {
 			panic(err)
 		}
 	}
 	switch chain {
+	case "test":
+		return &TestNetParams		
 	default:
 		return &MainNetParams
 	}
