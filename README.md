@@ -34,7 +34,7 @@ Blockbook currently supports over 30 coins. The Trezor team implemented
 the rest of coins were implemented by the community.
 
 Testnets for some coins are also supported, for example:
-- Bitcoin Testnet, Bitcoin Cash Testnet, Dogecoind Testnet, ZCash Testnet, Ethereum Testnet Ropsten
+- Bitcoin Testnet, Bitcoin Cash Testnet, Dogecoin Testnet, ZCash Testnet, Ethereum Testnet Ropsten
 
 List of all implemented coins is in [the registry of ports](/docs/ports.md).
 
