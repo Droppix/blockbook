@@ -61,7 +61,7 @@
       "xpub_magic": 70617039,
       "xpub_magic_segwit_p2sh": 71979618,
       "xpub_magic_segwit_native": 73342198,
-      "slip44": 156,
+      "slip44": 1,
       "additional_params": {
         "fiat_rates": "coingecko",
         "fiat_rates_params": "{\"url\": \"https://api.coingecko.com/api/v3\", \"coin\": \"bitcoin-gold\", \"periodSeconds\": 60}"
