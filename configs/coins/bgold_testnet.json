@@ -23,7 +23,7 @@
     "package_revision": "satoshilabs-1",
     "system_user": "bgold",
     "version": "0.17.3",
-    "binary_url": "https://github.com/BTCGPU/BTCGPU/releases/download/v0.17.3/bitcoin-gold-0.1732-x86_64-linux-gnu.tar.gz",
+    "binary_url": "https://github.com/BTCGPU/BTCGPU/releases/download/v0.17.3/bitcoin-gold-0.17.3-x86_64-linux-gnu.tar.gz",
     "verification_type": "gpg-sha256",
     "verification_source": "https://github.com/BTCGPU/BTCGPU/releases/download/v0.17.3/SHA256SUMS.asc",
     "extract_command": "tar -C backend --strip 1 -xf",
